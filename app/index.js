@@ -69,7 +69,7 @@ function getListHTML(args) {
     el += "<div class='recipe-list-header'>" + list.name + "</div>";
     el += "<ul class='recipe-list'>";
     entries.forEach(function(entry) {
-      el += '<li>' + entry.name + '</li>';
+      el += "<li><a href='" + entry.url + "'>" + entry.name + '</a></li>';
     });
     el += "</ul>";
   });
